@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Memória - Marie</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🐱 Jogo da Memória</h1>
+
+        <p class="subtitulo">
+            Encontre os 6 pares dos personagens!
+        </p>
+
+        <div class="informacoes">
+
+            <div class="info">
+                Jogadas
+                <strong id="jogadas">0</strong>
+            </div>
+
+            <div class="info">
+                Tempo
+                <strong id="tempo">00:00</strong>
+            </div>
+
+            <div class="info">
+                Pares
+                <strong id="pares">0 / 6</strong>
+            </div>
+
+        </div>
+
+        <div id="tabuleiro" class="tabuleiro">
+
+            <div class="carta" data-nome="Marie">
+                <div class="carta-conteudo">
+                    <div class="frente">
+                        <img src="./image/images.jpg" alt="Marie">
+                    </div>
+                    <div class="verso"></div>
+                </div>
+            </div>
+
+            <div class="carta" data-nome="Marie">
+                <div class="carta-conteudo">
+                    <div class="frente">
+                        <img src="./image/images.jpg" alt="Marie">
+                    </div>
+                    <div class="verso"></div>
+                </div>
+            </div>
+
+            <div class="carta" data-nome="Toulouse">
+                <div class="carta-conteudo">
+                    <div class="frente">
+                        <img src="./image/Toulouse.webp" alt="Toulouse">
+                    </div>
+                    <div class="verso"></div>
+                </div>
+            </div>
+
+            <div class="carta" data-nome="Toulouse">
+                <div class="carta-conteudo">
+                    <div class="frente">
+                        <img src="./image/Toulouse.webp" alt="Toulouse">
+                    </div>
+                    <div class="verso"></div>
+                </div>
+            </div>
+
+            <div class="carta" data-nome="Berlioz">
+                <div class="carta-conteudo">
+                    <div class="frente">
+                        <img src="./image/Berlioz.webp" alt="Berlioz">
+                    </div>
+                    <div class="verso"></div>
+                </div>
+            </div>
+
+            <div class="carta" data-nome="Berlioz">
+                <div class="carta-conteudo">
+                    <div class="frente">
+                        <img src="./image/Berlioz.webp" alt="Berlioz">
+                    </div>
+                    <div class="verso"></div>
+                </div>
+            </div>
+
+            <div class="carta" data-nome="Duquesa">
+                <div class="carta-conteudo">
+                    <div class="frente">
+                        <img src="./image/Duchessdisney.webp" alt="Duquesa">
+                    </div>
+                    <div class="verso"></div>
+                </div>
+            </div>
+
+            <div class="carta" data-nome="Duquesa">
+                <div class="carta-conteudo">
+                    <div class="frente">
+                        <img src="./image/Duchessdisney.webp" alt="Duquesa">
+                    </div>
+                    <div class="verso"></div>
+                </div>
+            </div>
+
+            <div class="carta" data-nome="Mariee">
+                <div class="carta-conteudo">
+                    <div class="frente">
+                        <img src="./image/marie.jpg" alt="Marie">
+                    </div>
+                    <div class="verso"></div>
+                </div>
+            </div>
+
+            <div class="carta" data-nome="Mariee">
+                <div class="carta-conteudo">
+                    <div class="frente">
+                        <img src="./image/marie.jpg" alt="Marie">
+                    </div>
+                    <div class="verso"></div>
+                </div>
+            </div>
+
+            <div class="carta" data-nome="Thomas O'Malley">
+                <div class="carta-conteudo">
+                    <div class="frente">
+                        <img src="./image/Thomas O'Malley.png" alt="Thomas O'Malley">
+                    </div>
+                    <div class="verso"></div>
+                </div>
+            </div>
+
+            <div class="carta" data-nome="Thomas O'Malley">
+                <div class="carta-conteudo">
+                    <div class="frente">
+                        <img src="./image/Thomas O'Malley.png" alt="Thomas O'Malley">
+                    </div>
+                    <div class="verso"></div>
+                </div>
+            </div>
+
+        </div>
+
+        <button class="botao" id="reiniciar">
+            🔄 Reiniciar jogo
+        </button>
+
+        <div id="mensagemFinal" class="mensagem">
+
+            <h2>🎉 Parabéns!</h2>
+
+            <p>
+                Você encontrou todos os 6 pares!
+            </p>
+
+            <p>
+                <strong>Jogadas:</strong>
+                <span id="resultadoJogadas">0</span>
+            </p>
+
+            <p>
+                <strong>Tempo:</strong>
+                <span id="resultadoTempo">00:00</span>
+            </p>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
